@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.collect {|char| char if (char.question? || char.exclamation? || char.sentence?)}.size
+    self.split("").collect {|char| char if (char.question? || char.exclamation? || char.sentence?)}.size
   end
 end
